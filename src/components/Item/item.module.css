@@ -1,0 +1,151 @@
+
+.itemIsDone,
+.itemNotDone {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 130px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: inset 3px -3px 12px 4px rgb(106 130 165);
+}
+
+.itemIsDone {
+    background-color: rgb(138, 221, 138);
+    box-shadow: inset 3px -3px 12px 4px rgb(89 165 92);
+}
+
+.itemNotDone {
+    background-color: rgb(133, 188, 240);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.itemTitle {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.updatedAt,
+.createdAt {
+    display: block;
+    font-size: 12px;
+}
+
+.createdAt {
+    margin-bottom: 6px;
+}
+
+.changeBtn,
+.changeBtnDone {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid #333333;
+    border-radius: 100%;
+}
+
+.removeBtn,
+.editBtn {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+.changeBtnDone,
+.removeBtn,
+.editBtn{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.changeBtn,
+.changeBtnDone,
+.removeBtn {
+    margin-bottom: 6px;
+}
+
+.changeBtnDone {
+    background-image: url('../../../public/img/check-mark.png');
+    background-size: 15px 15px;
+}
+
+.removeBtn {
+    background-image: url('../../../public/img/delete.png');
+    background-size: contain;
+}
+
+.editBtn {
+    background-image: url('../../../public/img/edit.png');
+    background-size: contain;
+}
+
+.confirm {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 530px;
+    height: 100%;
+    padding: 20px 40px;
+    background-color: rgb(224, 203, 203);
+    border: 3px solid #290404;
+}
+
+.confirmBtns {  
+    display: flex;
+    align-items: center;
+}
+
+.okBtn {
+    margin-right: 15px;
+}
+
+.cancelBtn,
+.okBtn {
+    padding: 7px;
+    color: #333333;
+    background-color: transparent;
+    border: 1px solid #333333;
+}
+
+.cancelBtn:hover,
+.okBtn:hover {
+    color: white;
+    background-color: #6d6969;
+    border: none;
+}
+
+@media (max-width: 450px) {
+
+    .itemTitle {
+        font-size: 14px;
+    }
+
+    .confirm {
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+    }
+
+}

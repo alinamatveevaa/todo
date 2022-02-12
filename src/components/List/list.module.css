@@ -1,0 +1,11 @@
+.listTodo {
+    margin: 0 auto;
+    width: 530px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 450px) {
+    .listTodo {
+        width: 300px;
+    }
+}
